@@ -1,4 +1,4 @@
-import ContaBancaria05.ContaBanco;
+package ContaBancaria05;
 
 public class App {
     public static void main(String[] args) throws Exception {
