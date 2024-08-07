@@ -1,5 +1,7 @@
 package UecEmoji;
 
+import java.util.Random;
+
 public class Luta {
 
   private Lutador desafiado;
@@ -8,14 +10,16 @@ public class Luta {
   private boolean aprovada;
 
   public void marcarLuta(Lutador l1, Lutador l2) {
-    if (l1.getCategoria().equals(l2.getCategoria()) && (l1 != l2)) {
+    if (l1.getCategoria().equals(l2.getCategoria()) && l1 != l2) {
       this.setAprovada(true);
       this.setDesafiado(l1);
       this.setDesafiante(l2);
+      System.out.println("Luta marcada com sucesso!");
     } else {
       this.setAprovada(false);
       this.setDesafiado(null);
       this.setDesafiante(null);
+      System.out.println("Erro! Categorias diferentes");
     }
   }
 
@@ -23,7 +27,9 @@ public class Luta {
     if (this.getAprovada()) {
       this.desafiado.apresentar();
       this.desafiante.apresentar();
-      int vencedor = (int) Math.random() * 3;
+
+      Random aleatorio = new Random();
+      int vencedor = aleatorio.nextInt(3);
       switch (vencedor) {
         case 0: // EMPATE
           System.out.println("Empatou!");
@@ -42,6 +48,8 @@ public class Luta {
           break;
       }
 
+    } else {
+      System.out.println("Luta não pode acontecer, categorias de pesos diferentes!");
     }
   }
 
