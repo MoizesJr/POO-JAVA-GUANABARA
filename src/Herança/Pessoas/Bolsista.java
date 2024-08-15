@@ -3,8 +3,12 @@ package Herança.Pessoas;
 public class Bolsista extends Aluno {
   private float bolsa;
 
-  public void renovarBolsa() {
-    System.out.println("Renovando bolsa de " + this.nome);
+  public void renovarBolsa(boolean bolsa) {
+    if (bolsa == true) {
+      System.out.println("bolsa de " + this.nome + " renavada com sucesso!");
+    } else {
+      System.out.println(this.nome + " Não teve a bolsa renovada");
+    }
   }
 
   @Override
