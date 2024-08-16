@@ -2,6 +2,8 @@ package Polimorfismo.Animais;
 
 public class Mamifero extends Animal {
 
+  protected String corPelo;
+
   @Override
   public void alimentar() {
     System.out.println("Mamando");

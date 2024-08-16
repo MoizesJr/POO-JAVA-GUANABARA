@@ -6,9 +6,18 @@ public class AppAnimal {
     Canguru canguru = new Canguru();
     Cachorro cachorro = new Cachorro();
     Cobra cobra = new Cobra();
+    Lobo lobo = new Lobo();
 
-    canguru.locomover();
+    // canguru.locomover();
     cachorro.locomover();
     cachorro.emitirSom();
+    cachorro.balancarRabo(true);
+
+    lobo.emitirSom();
+    cachorro.reagir("Vai apanhar");
+    cachorro.reagir(true);
+    cachorro.reagir(13, 0);
+
+    // cobra.locomover();
   }
 }
