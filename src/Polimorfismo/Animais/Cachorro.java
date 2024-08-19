@@ -34,7 +34,7 @@ public class Cachorro extends Lobo {
       if (peso < 10) {
         System.out.println("Abanar");
       } else {
-        System.out.println("Latir");
+        emitirSom();
       }
     } else {
       if (peso < 10) {

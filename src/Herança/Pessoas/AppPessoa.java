@@ -23,7 +23,8 @@ public class AppPessoa {
     a.escolherCurso("ADS");
     a.getCurso();
 
-    t[0] = new Tecnico(1);
+    t[0] = new Tecnico();
+    t[0].setRegistroProfissional(2);
     t[0].setNome("Pablo");
     t[0].setIdade(20);
     t[0].setSexo("M");
@@ -34,7 +35,8 @@ public class AppPessoa {
 
     System.out.println(t[0].toString());
 
-    t[1] = new Tecnico(2);
+    t[1] = new Tecnico();
+    t[1].setRegistroProfissional(1);
     t[1].setNome("mario");
     t[1].setIdade(22);
     t[1].setSexo("M");

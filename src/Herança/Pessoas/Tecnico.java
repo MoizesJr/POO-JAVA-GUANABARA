@@ -5,7 +5,7 @@ public class Tecnico extends Aluno {
   private int registroProfissional;
   private int xpProfissional;
 
-  public Tecnico(int registroProfissional) {
+  public Tecnico() {
     this.xpProfissional = 0;
   }
 

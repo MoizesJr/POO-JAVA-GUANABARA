@@ -16,7 +16,7 @@ public class AppAnimal {
     lobo.emitirSom();
     cachorro.reagir("Vai apanhar");
     cachorro.reagir(true);
-    cachorro.reagir(13, 0);
+    cachorro.reagir(6, 30);
 
     // cobra.locomover();
   }
